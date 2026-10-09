@@ -3,20 +3,19 @@ import type { CardContent, CardContentData } from "./content/CardContent";
 import { CardContentFactory } from "./content/CardContentFactory";
 import { newId, type UUID } from "./types";
 
-export interface ICard {
+/**
+ * Shape of a card. `C` is the content type: live {@link CardContent} instances
+ * by default, or {@link CardContentData} for the serialized form.
+ */
+export interface ICard<C extends CardContent | CardContentData = CardContent> {
   id: UUID;
-  question: CardContent;
-  answer: CardContent;
+  question: C;
+  answer: C;
   type: CardType;
 }
 
 /** Serialized form of a {@link Card}. */
-export interface CardData {
-  id: UUID;
-  question: CardContentData;
-  answer: CardContentData;
-  type: CardType;
-}
+export type CardData = ICard<CardContentData>;
 
 export class Card implements ICard {
   readonly id: UUID;

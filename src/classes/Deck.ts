@@ -2,20 +2,22 @@ import { Card, type CardData } from "./Card";
 import { newId, type UUID } from "./types";
 import type { StorageLocation } from "@/storage";
 
-export interface IDeck {
+/**
+ * Shape of a deck. `C` is the card type: {@link Card} instances by default,
+ * or {@link CardData} for the serialized form.
+ */
+export interface IDeck<C extends Card | CardData = Card> {
   id: UUID;
   name: string;
   belongs_to: UUID | null;
   storage: StorageLocation;
-  cards: Card[];
+  cards: C[];
   created_at: number;
   updated_at: number;
 }
 
 /** Serialized form of a {@link Deck}. */
-export interface DeckData extends Omit<IDeck, "cards"> {
-  cards: CardData[];
-}
+export type DeckData = IDeck<CardData>;
 
 export type DeckChanges = Partial<Pick<IDeck, "name" | "cards" | "storage">>;
 
