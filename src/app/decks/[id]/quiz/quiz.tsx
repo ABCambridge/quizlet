@@ -2,12 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
-import type { Deck } from "@/classes/Deck";
-import { QuizSession } from "@/classes/QuizSession";
-import type { UUID } from "@/classes/types";
-import Flashcard from "@/components/quiz/Flashcard";
-import QuizControls from "@/components/quiz/QuizControls";
-import QuizFinished from "@/components/quiz/QuizFinished";
+import { type Deck, QuizSession, type UUID } from "@/classes";
+import { Flashcard, QuizControls } from "@/components/quiz";
+import QuizFinished from "./QuizFinished";
 import { useDeck } from "@/hooks/useDeck";
 import { useKeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
 

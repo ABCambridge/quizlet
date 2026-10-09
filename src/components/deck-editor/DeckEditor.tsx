@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import type { UUID } from "@/classes/types";
-import DeckForm from "@/components/deck-editor/DeckForm";
+import type { UUID } from "@/classes";
+import DeckForm from "./DeckForm";
 import { useDeck } from "@/hooks/useDeck";
 
 interface DeckEditorProps {

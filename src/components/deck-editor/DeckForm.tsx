@@ -3,16 +3,15 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useCurrentUser } from "@/auth/AuthProvider";
-import type { CardData } from "@/classes/Card";
-import { Deck } from "@/classes/Deck";
-import CardEditor from "@/components/deck-editor/CardEditor";
-import { DeckDraft, emptyCardData } from "@/components/deck-editor/DeckDraft";
-import { buttonStyles } from "@/components/ui/buttonStyles";
-import { useDeckService } from "@/storage/DeckServiceProvider";
+import { type CardData, Deck } from "@/classes";
+import CardEditor from "./CardEditor";
+import { DeckDraft, emptyCardData } from "./DeckDraft";
+import { buttonStyles } from "@/components/ui";
 import {
   STORAGE_LOCATION_INFO,
   type StorageLocation,
-} from "@/storage/StorageLocation";
+  useDeckService,
+} from "@/storage";
 
 interface DeckFormProps {
   /** The deck being edited, or undefined when creating a new one. */

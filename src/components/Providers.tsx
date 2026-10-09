@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { AuthProvider } from "@/auth/AuthProvider";
-import { DeckServiceProvider } from "@/storage/DeckServiceProvider";
+import { DeckServiceProvider } from "@/storage";
 
 const Providers = ({ children }: { children: ReactNode }) => {
   return (

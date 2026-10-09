@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import type { Deck } from "@/classes/Deck";
-import { useDeckService } from "@/storage/DeckServiceProvider";
+import type { Deck } from "@/classes";
+import { useDeckService } from "@/storage";
 
 /** All decks the current user can see. `decks` is null while loading. */
 export const useDecks = () => {

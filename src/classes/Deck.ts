@@ -1,6 +1,6 @@
-import { Card, type CardData } from "@/classes/Card";
-import { newId, type UUID } from "@/classes/types";
-import type { StorageLocation } from "@/storage/StorageLocation";
+import { Card, type CardData } from "./Card";
+import { newId, type UUID } from "./types";
+import type { StorageLocation } from "@/storage";
 
 export interface IDeck {
   id: UUID;

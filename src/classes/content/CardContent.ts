@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { ContentFormat } from "@/classes/content/ContentFormat";
+import type { ContentFormat } from "@/classes";
 
 /** Serialized form of a {@link CardContent}. */
 export interface CardContentData {

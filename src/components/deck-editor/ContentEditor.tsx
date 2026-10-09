@@ -1,11 +1,11 @@
 "use client";
 
-import type { CardContentData } from "@/classes/content/CardContent";
 import {
+  type CardContentData,
   CONTENT_FORMAT_INFO,
   CONTENT_FORMATS,
   type ContentFormat,
-} from "@/classes/content/ContentFormat";
+} from "@/classes";
 
 interface ContentEditorProps {
   label: string;

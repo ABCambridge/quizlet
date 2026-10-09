@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { buttonStyles } from "@/components/ui/buttonStyles";
+import { buttonStyles } from "@/components/ui";
 import { useDecks } from "@/hooks/useDecks";
-import { STORAGE_LOCATION_INFO } from "@/storage/StorageLocation";
+import { STORAGE_LOCATION_INFO } from "@/storage";
 
 const DeckList = () => {
   const { decks } = useDecks();

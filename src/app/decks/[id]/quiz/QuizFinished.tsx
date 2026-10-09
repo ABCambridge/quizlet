@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { buttonStyles } from "@/components/ui/buttonStyles";
+import { buttonStyles } from "@/components/ui";
 
 interface QuizFinishedProps {
   total: number;

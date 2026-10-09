@@ -1,10 +1,7 @@
-import { CardType, isCardType } from "@/classes/CardType";
-import type {
-  CardContent,
-  CardContentData,
-} from "@/classes/content/CardContent";
-import { CardContentFactory } from "@/classes/content/CardContentFactory";
-import { newId, type UUID } from "@/classes/types";
+import { CardType, isCardType } from "./CardType";
+import type { CardContent, CardContentData } from "./content/CardContent";
+import { CardContentFactory } from "./content/CardContentFactory";
+import { newId, type UUID } from "./types";
 
 export interface ICard {
   id: UUID;

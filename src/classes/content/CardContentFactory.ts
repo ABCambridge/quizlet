@@ -1,15 +1,9 @@
-import type {
-  CardContent,
-  CardContentData,
-} from "@/classes/content/CardContent";
-import { CodeContent } from "@/classes/content/CodeContent";
-import {
-  ContentFormat,
-  isContentFormat,
-} from "@/classes/content/ContentFormat";
-import { LatexContent } from "@/classes/content/LatexContent";
-import { MarkdownContent } from "@/classes/content/MarkdownContent";
-import { PlainTextContent } from "@/classes/content/PlainTextContent";
+import type { CardContent, CardContentData } from "./CardContent";
+import { CodeContent } from "./CodeContent";
+import { ContentFormat, isContentFormat } from "./ContentFormat";
+import { LatexContent } from "./LatexContent";
+import { MarkdownContent } from "./MarkdownContent";
+import { PlainTextContent } from "./PlainTextContent";
 
 type CardContentConstructor = new (source: string) => CardContent;
 

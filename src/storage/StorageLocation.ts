@@ -8,11 +8,8 @@ export type StorageLocation =
   (typeof StorageLocation)[keyof typeof StorageLocation];
 
 export interface StorageLocationInfo {
-  /** Label for the save button. */
   saveLabel: string;
-  /** Short label for showing where a deck lives. */
   label: string;
-  /** Only logged-in users may save here. */
   requiresAuth: boolean;
 }
 

@@ -1,4 +1,4 @@
-import DeckList from "@/components/DeckList";
+import DeckList from "./DeckList";
 
 const Home = ({}) => {
   return (

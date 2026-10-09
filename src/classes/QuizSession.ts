@@ -1,5 +1,5 @@
-import type { Card } from "@/classes/Card";
-import type { Deck } from "@/classes/Deck";
+import type { Card } from "./Card";
+import type { Deck } from "./Deck";
 
 /**
  * Immutable state of a run through a deck. Every transition returns a new

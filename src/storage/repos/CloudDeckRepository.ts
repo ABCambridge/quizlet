@@ -1,7 +1,7 @@
 import type { User } from "@/auth/User";
-import type { Deck } from "@/classes/Deck";
-import type { DeckRepository } from "@/storage/DeckRepository";
-import { StorageLocation } from "@/storage/StorageLocation";
+import type { Deck } from "@/classes";
+import type { DeckRepository } from "./DeckRepository";
+import { StorageLocation } from "@/storage";
 
 /** Placeholder for the future backend. Only constructed for logged-in users. */
 // TODO: Connect to supabase

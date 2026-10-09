@@ -1,20 +1,19 @@
 "use client";
 
 import type { ReactNode } from "react";
-import type { Card } from "@/classes/Card";
-import { CARD_TYPE_INFO } from "@/classes/CardType";
-
-interface FlashcardProps {
-  card: Card;
-  revealed: boolean;
-  onFlip: () => void;
-}
+import { type Card, CARD_TYPE_INFO } from "@/classes";
 
 interface FaceProps {
   side: string;
   badge: string;
   back?: boolean;
   children: ReactNode;
+}
+
+interface FlashcardProps {
+  card: Card;
+  revealed: boolean;
+  onFlip: () => void;
 }
 
 const Face = ({ side, badge, back = false, children }: FaceProps) => {

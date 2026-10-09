@@ -1,9 +1,8 @@
 "use client";
 
-import { buttonStyles } from "@/components/ui/buttonStyles";
+import { buttonStyles } from "@/components/ui";
 
 interface QuizControlsProps {
-  /** 1-based position shown to the user. */
   position: number;
   total: number;
   hasPrevious: boolean;

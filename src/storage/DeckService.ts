@@ -1,7 +1,6 @@
-import type { Deck } from "@/classes/Deck";
-import type { UUID } from "@/classes/types";
-import type { DeckRepository } from "@/storage/DeckRepository";
-import type { StorageLocation } from "@/storage/StorageLocation";
+import type { Deck, UUID } from "@/classes";
+import type { DeckRepository } from "./repos/DeckRepository";
+import type { StorageLocation } from "./StorageLocation";
 
 /**
  * Single entry point for deck persistence. Routes each deck to the repository
@@ -15,7 +14,6 @@ export class DeckService {
     this.repositories = new Map(repositories.map((r) => [r.location, r]));
   }
 
-  /** Locations the current user can save to, in display order. */
   get locations(): StorageLocation[] {
     return [...this.repositories.keys()];
   }

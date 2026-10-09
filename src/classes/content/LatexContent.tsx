@@ -1,5 +1,5 @@
-import { CardContent } from "@/classes/content/CardContent";
-import { ContentFormat } from "@/classes/content/ContentFormat";
+import { CardContent } from "./CardContent";
+import { ContentFormat } from "@/classes";
 
 export class LatexContent extends CardContent {
   readonly format = ContentFormat.Latex;

@@ -1,8 +1,11 @@
-import { Card, type CardData } from "@/classes/Card";
-import { CardType } from "@/classes/CardType";
-import { ContentFormat } from "@/classes/content/ContentFormat";
-import type { Deck } from "@/classes/Deck";
-import { newId } from "@/classes/types";
+import {
+  Card,
+  type CardData,
+  CardType,
+  ContentFormat,
+  type Deck,
+  newId,
+} from "@/classes";
 
 /**
  * Editable, plain-data form of a deck. The editor works on this and only

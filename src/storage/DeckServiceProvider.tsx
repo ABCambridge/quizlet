@@ -2,10 +2,10 @@
 
 import { createContext, useContext, useMemo, type ReactNode } from "react";
 import { useCurrentUser } from "@/auth/AuthProvider";
-import { CloudDeckRepository } from "@/storage/CloudDeckRepository";
-import type { DeckRepository } from "@/storage/DeckRepository";
-import { DeckService } from "@/storage/DeckService";
-import { LocalStorageDeckRepository } from "@/storage/LocalStorageDeckRepository";
+import { CloudDeckRepository } from "./repos/CloudDeckRepository";
+import type { DeckRepository } from "./repos/DeckRepository";
+import { DeckService } from "./DeckService";
+import { LocalStorageDeckRepository } from "./repos/LocalStorageDeckRepository";
 
 const DeckServiceContext = createContext<DeckService | null>(null);
 

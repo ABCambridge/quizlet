@@ -1,8 +1,12 @@
 "use client";
 
-import type { CardData } from "@/classes/Card";
-import { CARD_TYPE_INFO, CARD_TYPES, type CardType } from "@/classes/CardType";
-import ContentEditor from "@/components/deck-editor/ContentEditor";
+import {
+  CARD_TYPE_INFO,
+  CARD_TYPES,
+  type CardData,
+  type CardType,
+} from "@/classes";
+import ContentEditor from "./ContentEditor";
 
 interface CardEditorProps {
   index: number;
