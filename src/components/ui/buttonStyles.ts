@@ -6,3 +6,5 @@ export const buttonStyles = {
   secondary: `${base} border border-slate-300 bg-white text-slate-800 hover:bg-slate-100`,
   danger: `${base} border border-red-300 bg-white text-red-700 hover:bg-red-50`,
 } as const;
+
+// TODO: add styles for importing/exporting

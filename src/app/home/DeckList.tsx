@@ -36,6 +36,9 @@ const DeckList = () => {
             </p>
           </div>
           <div className="flex gap-2">
+            <Link href={`#`} className={buttonStyles.danger}>
+              Export
+            </Link>
             <Link
               href={`/decks/${deck.id}/edit`}
               className={buttonStyles.secondary}
