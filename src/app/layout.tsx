@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Providers from "@/components/Providers";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -11,7 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-slate-50 text-slate-900">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
