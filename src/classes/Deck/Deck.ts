@@ -1,5 +1,5 @@
-import { Card, type CardData } from "./Card";
-import { newId, type UUID } from "./types";
+import { Card, type CardData } from "../Card/Card";
+import { newId, type UUID } from "../types";
 import type { StorageLocation } from "@/storage";
 
 /**

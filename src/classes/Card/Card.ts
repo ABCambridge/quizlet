@@ -1,7 +1,7 @@
 import { CardType, isCardType } from "./CardType";
-import type { CardContent, CardContentData } from "./content/CardContent";
-import { CardContentFactory } from "./content/CardContentFactory";
-import { newId, type UUID } from "./types";
+import type { CardContent, CardContentData } from "../content/CardContent";
+import { CardContentFactory } from "../content/CardContentFactory";
+import { newId, type UUID } from "../types";
 
 /**
  * Shape of a card. `C` is the content type: live {@link CardContent} instances
